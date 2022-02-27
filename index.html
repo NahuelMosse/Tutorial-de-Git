@@ -18,13 +18,25 @@
             <p>Una ves creado el repositorio local, hay que crear el de la nube, para eso vamos a crear un repositorio en GitHub</p>
             <img src="img/new_repository_github.png" alt="nuevo repositorio">
             <p>Le damos un nombre y opcionalmente una descripcion</p>
+            <img src="img/github_repository_name.png" alt="nombre al repositorio">
             <p>Por ultimo ingresamos en codigo:</p>
             <code>git remote add origin (URL del repositorio)</code>
             <p>seguido de:</p>
             <code>git push origin master</code>
         </article>
         <article>
-
+            <h3>¿Como subir tu archivos o modificaciones a un repositorio?</h3>
+            <p>nota: en ningun momento tus archivos se van a mover, git los esta moviendo en su sistema interno</p>
+            <p>Primero hay que pasar los archivos al staying area</p>
+            <code>git add .</code>
+            <p>nota: Se puede remplazar el punto por el archivo especifico que se quiera pasar</p>
+            <p>Luego hay que pasarlos al repositorio local:</p>
+            <code>git commit -m "(comentario descriptivo de lo que agregaste o modificaste)"</code>
+            <p>nota: estos dos comandos se pueden abreviar a:</p>
+            <code>git commit -am "(comentario descriptivo de lo que agregaste o modificaste)"</code>
+            <p>Y por aultimo agregarlo al repositorio en la nube:</p>
+            <code>git push origin master</code>
+            <p>nota: no es obligatorio hacer cada ves que haces un commit, podes hacerlo una vez al dia o cuando creas necesario guardar tus archivos en la nube</p>
         </article>
     </main>
 </body>
