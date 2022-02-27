@@ -10,7 +10,7 @@
     <main>
         <h1>Git</h1>
         <article>
-            <h3>¿Como crear un repositorio?</h3>
+            <h3>¿Como crear un repositorio Git?</h3>
             <p>Lo primero es entrar en la consola de git en la carpeta a inicializar</p>
             <img src="img/open_git_console.png" alt="abrir consola de git">
             <p>Luego insertar en consola:</p>
@@ -25,7 +25,7 @@
             <code>git push origin master</code>
         </article>
         <article>
-            <h3>¿Como subir tu archivos o modificaciones a un repositorio?</h3>
+            <h3>¿Como subir tu archivos o modificaciones a un repositorio Git?</h3>
             <p>nota: en ningun momento tus archivos se van a mover, git los esta moviendo en su sistema interno</p>
             <p>Primero hay que pasar los archivos al staying area</p>
             <code>git add .</code>
@@ -39,7 +39,12 @@
             <p>nota: no es obligatorio hacer cada ves que haces un commit, podes hacerlo una vez al dia o cuando creas necesario guardar tus archivos en la nube</p>
         </article>
         <article>
-            <h3>Comandos de visualizacion</h3>
+            <h3>¿Como clonar un repositorio Git?</h3>
+            <p>Nos pocisionamos en consola en la carpeta donde se quiere clonar y ponemos en consola:</p>
+            <code>git clone (URL del repositorio)</code>
+        </article>
+        <article>
+            <h3>¿Como ver el estado de mis archivos con Git?</h3>
             <p>Para ver el estado de un archivo:</p>
             <code>git status</code>
             <p>nota:</p>
@@ -48,20 +53,48 @@
                 <li>verde: trackeado en el staying area</li>
                 <li>sin archivo: en el repositorio local y/o en la nube</li>
             </ul>
-            <p>Para ver el historial de commits de la rama actual:</p>
-            <code>git log --oneline</code>
-            <p>nota: HEAD indica la rama actual</p>
         </article>
         <article>
-            <h3>Manejo de ramas</h3>
+            <h3>¿Como volver a una version anterior con Git?</h3>
+            <p>Para volver atras en las versiones hay que poner:</p>
+            <code>git reset --hard (codigo de la version)</code>
+            <p>nota: el codigo de la version se puede ver desde el historial de Git, leer mas abajo</p>
+        </article>
+        <article>
+            <h3>¿Como ver el histrial de versiones de Git?</h3>
+            <p>Para ver el historial de commits de la rama actual:</p>
+            <code>git log --oneline</code>
+            <p>nota: el codigo alfanumerico de la izquierda, es el codigo de la version. HEAD indica la rama actual</p>
+        </article>
+        <article>
+            <h3>¿Como ponerle nombre a una version en Git?</h3>
+            <p>Para poner un tag hay que poner:</p>
+            <code>git tag (nombre de la version) -m "(comentario descriptivo de la version)"</code>
+            <p>Luego para que se suban a la nube todas las tags que creaste:</p>
+            <code>git push --tags</code>
+        </article>
+        <article>
+            <h3>¿Como crear una rama en Git?</h3>
             <p>Para crear una rama primero hay que insertar el siguiente codigo:</p>
             <code>git branch (nombre de la rama)</code>
             <p>nota: este comando no te pocisiona en esta nueva rama, solo la crea</p>
+            </article>
+            <article>
+            <h3>¿Como cambiar de rama en Git?</h3>
+            <p>Para cambiar de rama:</p>
+            <code>git checkout (nombre de la rama)</code>
+        </article>
+        <article>
+            <h3>¿Como ver las ramas creadas con Git</h3>
             <p>Para ver las ramas creadas:</p>
             <code>git branch</code>
             <p>nota: este comando te muestra con un asterisco la rama actual</p>
-            <p>Para cambiar de rama:</p>
-            <code>git checkout (nombre de la rama)</code>
+        </article>
+        <article>
+            <h3>¿Como fusionar ramas de Git?</h3>
+            <p>Para fusionar, hay que posicionarse en una de las ramas a fucionar y poner el siguiente codigo:</p>
+            <code>git merge (nombre de la otra rama)</code>
+            <p>nota: en caso de fallar hay que arreglarlo manualmente</p>
         </article>
     </main>
 </body>
